@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" class="next-head">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css" class="next-head"> -->
+    <link rel="stylesheet" href="../css/main.css" class="next-head">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Montserrat|Lato" rel="stylesheet" class="next-head">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script  src="/client/js/lib/require.js"></script>
+    <!-- <script  src="../src/jquery.js"></script> -->
+    <title>Student Records</title>
+</head>
+<body>
+  <div class="container"> 
+    <h3 id="header" align="center">Welcome to Student Records</h3> 
+    <form id="contact" action="" method="post">
+      <h3> Add Student </h3>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus id="name">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Roll Number" type="text" tabindex="1" required id="roll">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Physics" type="text" tabindex="3" required id="phy">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Chemistry" type="text" tabindex="4" required id="chem">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Maths" type="text" tabindex="4" required id="maths">
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+      <div class="success-data">
+    
+  </div>
+    </form>
+
+  </div>
+  <div id="details" align="center">
+    <a href="dispDetails.html">Display Student Details</a>
+  </div>
+  <script type="text/javascript">
+        require.config({
+            baseUrl : '/client/js',
+            paths : {
+                // all versioning paths alias here since it shouldn't be cached
+                'main' : 'index',
+                // 'sections/search/main' : 'sections/search/main-v27',
+                'jquery' : 'lib/jquery',
+                'handlebars' : 'lib/handlebars'
+            }
+        });
+        require(['main'], function(main){
+            //main is loaded, probably don't need to do anything here..
+        });
+    
+  </script>
+</body>
+</html>
