@@ -11,18 +11,37 @@
 			</tr>
 			<tr>
 				<th>Phy</th>
-				<td>{{phy}}</td>
+				<td><input type="text" name="phy" id="phy" value={{phy}}></td>
 			</tr>
 			<tr>
 				<th>Chem</th>
-				<td>{{chem}}</td>
+				<td><input type="text" name="chem" id="chem" value={{chem}}></td>
 			</tr>
 			<tr>
 				<th>Maths</th>
-				<td>{{maths}}</td>
+				<td><input type="text" name="maths" id="maths" value={{maths}}></td>
+			</tr>
+			<tr>
+				<th>Grade</th>
+				<td>{{grade}}</td>
+			</tr>
+			<tr>
+				<th>Image</th>
+				<td>{{imgUrl}}</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
+
+<div id="update_val">
+	<p><button name="update" type="submit" id="update">Update</button></p>
+	<div class="success-data">
+    
+    </div>
+    <img id="response_img"></img>
+	<img src={{imgUrl}}></img>
+</div>
+
+
 
 

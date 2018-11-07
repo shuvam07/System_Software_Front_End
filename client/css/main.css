@@ -22,7 +22,7 @@ body {
 }
 
 .studentDetails{
-
+  text-align: center;
 }
 
 .container {
@@ -39,12 +39,12 @@ body {
   margin-top: 20px; 
 }
 
-#contact input[type="text"],
-#contact input[type="tel"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {
+#formDetails input[type="text"],
+#formDetails input[type="tel"],
+#formDetails input[type="tel"],
+#formDetails input[type="url"],
+#formDetails textarea,
+#formDetails button[type="submit"] {
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
@@ -56,21 +56,21 @@ body {
   margin-top: 20px;
 }
 
-#contact {
+#formDetails {
   background: #F9F9F9;
   padding: 25px;
   /*margin: 150px 0;*/
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-#contact h3 {
+#formDetails h3 {
   display: block;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
-#contact h4 {
+#formDetails h4 {
   margin: 5px 0 15px;
   display: block;
   font-size: 13px;
@@ -85,11 +85,11 @@ fieldset {
   width: 100%;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
+#formDetails input[type="text"],
+#formDetails input[type="email"],
+#formDetails input[type="tel"],
+#formDetails input[type="url"],
+#formDetails textarea {
   width: 100%;
   border: 1px solid #ccc;
   background: #FFF;
@@ -97,24 +97,24 @@ fieldset {
   padding: 10px;
 }
 
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
+#formDetails input[type="text"]:hover,
+#formDetails input[type="email"]:hover,
+#formDetails input[type="tel"]:hover,
+#formDetails input[type="url"]:hover,
+#formDetails textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-#contact textarea {
+#formDetails textarea {
   height: 100px;
   max-width: 100%;
   resize: none;
 }
 
-#contact button[type="submit"] {
+#formDetails button[type="submit"] {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -125,14 +125,14 @@ fieldset {
   font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
+#formDetails button[type="submit"]:hover {
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
+#formDetails button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -140,8 +140,8 @@ fieldset {
   text-align: center;
 }
 
-#contact input:focus,
-#contact textarea:focus {
+#formDetails input:focus,
+#formDetails textarea:focus {
   outline: 0;
   border: 1px solid #aaa;
 }
@@ -186,13 +186,14 @@ a:hover {
 
 .requestForm {
   align-content: center;
+  font-weight: 400px;
 }
 
 
 table {
     margin: 20px auto;
     table-layout: fixed;
-    width: 80%;
+    /*width: 80%;*/
     border-collapse: collapse;
     border: 3px solid #aeaf9d;
 }
@@ -243,4 +244,10 @@ th {
 
 #rollNo {
   min-height: 30px;
+}
+
+.failure-data{
+  color: red;
+  font-size: 15px;
+  font-weight: 500;
 }

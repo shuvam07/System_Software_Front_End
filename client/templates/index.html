@@ -13,35 +13,50 @@
 <body>
   <div class="container"> 
     <h3 id="header" align="center">Welcome to Student Records</h3> 
-    <form id="contact" action="" method="post">
+
+    <form id="formDetails" name="formDetails" action="" method="post" enctype="multipart/form-data">
       <h3> Add Student </h3>
       <fieldset>
-        <input placeholder="Your name" type="text" tabindex="1" required autofocus id="name">
+        <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus id="name">
       </fieldset>
       <fieldset>
-        <input placeholder="Your Roll Number" type="text" tabindex="1" required id="roll">
+        <input placeholder="Your Roll Number" name="roll" type="text" tabindex="1" required id="roll">
       </fieldset>
       <fieldset>
-        <input placeholder="Physics" type="text" tabindex="3" required id="phy">
+        <input placeholder="Physics" name="phy" type="text" tabindex="3" required id="phy">
       </fieldset>
       <fieldset>
-        <input placeholder="Chemistry" type="text" tabindex="4" required id="chem">
+        <input placeholder="Chemistry" name="chem" type="text" tabindex="4" required id="chem">
       </fieldset>
       <fieldset>
-        <input placeholder="Maths" type="text" tabindex="4" required id="maths">
+        <input placeholder="Maths" name="maths" type="text" tabindex="4" required id="maths">
       </fieldset>
+       <fieldset>
+        <!-- <input placeholder="Image Url" type="text" tabindex="4" required id="imgUrl"> -->
+        <input type="file" id="imageUrl" name="imageUrl"/>
+      </fieldset>
+
       <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        
       </fieldset>
       <div class="success-data">
     
-  </div>
+    </div>
+    <div class="failure-data">
+    
+    </div>
+    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </form>
 
   </div>
   <div id="details" align="center">
-    <a href="dispDetails.html">Display Student Details</a>
+    <a href="dispDetails.html">Display Each Student Details</a>
   </div>
+
+  <div id="details" align="center">
+    <a href="showAllRecords.html" target="blank">Display All Student Details</a>
+  </div>
+
   <script type="text/javascript">
         require.config({
             baseUrl : '/client/js',

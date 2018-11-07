@@ -1,0 +1,26 @@
+<table>
+	<thead>
+	  <tr>
+	    <th>Name</th>
+	    <th>Roll No</th>
+	    <th>Phy</th>
+	    <th>Chem</th>
+	    <th>Maths</th>
+	    <th>Grade</th>
+	    <th>Image</th>
+	  </tr>
+	</thead>
+	<tbody>
+		{{#each result}}
+			<tr>
+			    <td>{{this.name}}</td>
+			    <td>{{this.rollNo}}</td>
+			    <td>{{this.phy}}</td>
+			    <td>{{this.chem}}</td>
+			    <td>{{this.maths}}</td>
+			    <td>{{this.grade}}</td>
+			    <td><img src = {{this.imgUrl}}></img></td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
